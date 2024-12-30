@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator</title>
+    </head>
+    <body>
+        <style>
+          @font-face {
+    font-family: 'DS-Digital Normal';
+    font-style: normal;
+    font-weight: normal;
+    src: local('DS-Digital Normal'), url('DS-DIGI.woff') format('woff');
+    }
+
+        .main-body{
+            height: 400px;
+            width: 350px;
+            margin: 50px auto;
+            background-color: rgb(83, 82, 82);
+            border-radius: 3px;
+        }
+
+        .screen{
+            width: 300px;
+            background-color: #A1AF77;
+            text-align: right;
+            font-size: 30px;
+            padding: 5px 10px;
+            margin-top: 50px;
+            margin-left: 13px;
+            margin-bottom: 40px;
+            align-items: center;
+            font-family: "DS-Digital Normal";
+
+        }
+
+        .container{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            height: 250px;
+            
+        }
+
+        .btn{
+            width: 50px;
+            height: 30px;
+            font-size: 20px;
+            align-items: center;
+            margin: 10px;
+            border: 0.5px black solid;
+            border-radius: 5px;
+            
+        }
+
+        .btn:hover{
+            box-shadow: 0 0 5px whitesmoke;
+            transition: 0.5s;
+        }
+    .btn1{
+        background-color: #FF6348;
+        height: 70px;
+    }
+
+    .btn2{
+        width: 50px;
+            height: 30px;
+            background-color: #FF6348;
+            font-size: 20px;
+            align-items: center;
+            margin: 10px;
+            border: 0.5px black solid;
+            border-radius: 5px;
+
+    }
+    </style>
+
+        <div class="main-body">
+
+            <div>
+                <input type="text" value="0" class="screen">
+            </div>
+
+            <div class="container">
+
+                <button class="btn2">AC</button>
+                <button class="btn">7</button>
+                <button class="btn">4</button>
+                <button class="btn">1</button>
+                <button class="btn">0</button>
+
+                <button class="btn2">M</button>
+                <button class="btn">8</button>
+                <button class="btn">5</button>
+                <button class="btn">2</button>
+                <button class="btn">.</button>
+
+                <button class="btn">/</button>
+                <button class="btn">9</button>
+                <button class="btn">6</button>
+                <button class="btn">3</button>
+                <button class="btn">%</button>
+
+                <button class="btn">*</button>
+                <button class="btn">-</button>
+                <button class="btn">+</button>
+                <button class="btn btn1">=</button>
+
+            </div>
+
+        </div>
+    </body>
+</html>
